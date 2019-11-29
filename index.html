@@ -164,15 +164,70 @@
 
     <section id="confirmation">
       <div class="container">
-        <div class="confirmation-div-1">
-          <p>
-            What is the relationship between the column A (Principal Column) and
-            column B?
-          </p>
-          <button>Direct</button>
-        </div>
+        <form action="">
+          <div class="confirmation-div-1 border-div">
+            <p>
+              What is the relationship between the column A (Principal Column)
+              and column B?
+            </p>
+
+            <label class=""
+              >Direct Proportion
+              <input type="radio" checked="checked" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class=""
+              >Inverse Proportion
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="confirmation-div-2 border-div">
+            <p>
+              What is the relationship between the column A (Principal Column)
+              and column C?
+            </p>
+            <label class=""
+              >Direct Proportion
+              <input type="radio" checked="checked" name="radio-1" />
+              <span class="checkmark"></span>
+            </label>
+            <label class=""
+              >Inverse Proportion
+              <input type="radio" name="radio-1" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="hint-notes border-div">
+            <h3>NOTE</h3>
+            <p>
+              Direct Proportion: An increase in one quantity results in an
+              increase in the other.
+              <a
+                href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
+                >Learn More</a
+              >
+            </p>
+            <p>
+              Inverse Proportion: An increase in one quantity results in a
+              decrease in the other
+              <a
+                href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
+                >Learn More</a
+              >
+            </p>
+          </div>
+
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
       </div>
     </section>
+
+    <section id="loading"></section>
+    <section id="solution"></section>
+    <footer id="footer"></footer>
 
     <script src="app.js"></script>
     <script
