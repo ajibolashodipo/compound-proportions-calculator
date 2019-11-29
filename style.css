@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utility Classes */
+
+.container {
+  width: 60%;
+  margin: 5% auto;
+  padding: 2.5%;
+  border: 1px solid green;
+  border-radius: 10px;
+  text-align: center;
+  /* padding: 5%; */
+}
+
+/* ................ */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  width: 100%;
+}
+
+.grid-elements {
+  border: 1px solid red;
+  border-radius: 5px;
+  margin: 5%;
+  padding: 2%;
+  display: flex;
+  /* flex-direction: column; */
+  /* width: 30%; */
+}
+
+.grid-container .column-header {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.grid-container .column-header h3 {
+  font-size: 1.2rem;
+}
+
+#form-number {
+  width: 70%;
+  margin-right: 2.5%;
+}
+
+#form-unit {
+  width: 25%;
+}
+
+.grid-elements:first-child {
+  color: red;
+}
+
+.grid-container button {
+  grid-column: 2/3;
+}
+/* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* .random,
+.randomq {
+  border: 1px dashed blue;
+  display: inline;
+} */
+/* Add some margins for each label */
+/* .form-inline label {
+  width: 20%;
+  color: red;
+  /* margin: 5px 0 5px 0; 
+} */
+
+/* Style the input fields */
+.form-inline input {
+  /* width: 30%; */
+  /* vertical-align: middle; */
+  margin: 5px 0px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
