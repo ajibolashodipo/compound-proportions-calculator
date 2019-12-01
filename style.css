@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: "Cutive Mono", monospace; */
+  /* font-family: "Nixie One", cursive; */
+  font-family: "Life Savers", cursive;
+  /* font-weight: 700; */
+  /* color: white; */
 }
 ul {
   padding: 0;
@@ -15,6 +20,7 @@ html {
 body {
   min-height: 100%;
   width: 100%;
+  /* background: url(./img/bg-img-2.jpg) center; */
 }
 
 /* Utility Classes */
@@ -26,6 +32,24 @@ body {
 }
 .we-move {
   padding-bottom: 10vh;
+  font-weight: bold;
+}
+
+.header-title h1 {
+  font-weight: bold;
+}
+
+.header-content p {
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+}
+
+.main-quantities p {
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+}
+.main-quantities h2 {
+  font-weight: bold;
 }
 
 .container {
@@ -43,6 +67,30 @@ body {
   border: 1px solid teal;
   border-radius: 5px;
   margin-bottom: 5%;
+  padding: 2%;
+}
+
+.border-div p {
+  letter-spacing: 0.08rem;
+}
+
+.button {
+  background-color: #265add;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 10rem;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: #e90c59;
 }
 
 /* ................ */
@@ -55,13 +103,47 @@ body {
 }
 
 .grid-elements {
-  border: 1px solid red;
+  border: 1px solid steelblue;
   border-radius: 5px;
   margin: 5%;
   padding: 2%;
   display: flex;
   /* flex-direction: column; */
   /* width: 30%; */
+}
+
+/* grid-element styling */
+/* grids 1 and 4 */
+.grid-element-1,
+.grid-element-4 {
+  border: 1px solid #e90c59;
+}
+
+.grid-element-1 input::placeholder,
+.grid-element-4 input::placeholder {
+  /* font-weight: bold; */
+  color: #e90c59;
+}
+/* grids 2 and 5 */
+.grid-element-2,
+.grid-element-5 {
+  border: 1px solid #265add;
+}
+
+.grid-element-2 input::placeholder,
+.grid-element-5 input::placeholder {
+  /* font-weight: bold; */
+  color: #265add;
+}
+.grid-element-3,
+.grid-element-6 {
+  border: 1px solid green;
+}
+
+.grid-element-3 input::placeholder,
+.grid-element-6 input::placeholder {
+  /* font-weight: bold; */
+  color: green;
 }
 
 .grid-container .column-header {
@@ -76,6 +158,20 @@ body {
   font-size: 1.2rem;
 }
 
+/* grid column headers */
+.grid-element-1a h3 {
+  color: #e90c59;
+  font-weight: 800;
+}
+.grid-element-1b h3 {
+  color: steelblue;
+  font-weight: bold;
+}
+.grid-element-1c h3 {
+  color: green;
+  font-weight: bold;
+}
+
 .form-number {
   width: 65%;
   margin: 0 auto;
@@ -85,8 +181,8 @@ body {
   width: 35%;
 }
 
-.grid-elements:first-child {
-  color: red;
+.radio-label {
+  margin: 0 5%;
 }
 
 .grid-container button {
@@ -99,18 +195,6 @@ body {
   align-items: center;
 }
 
-/* .random,
-.randomq {
-  border: 1px dashed blue;
-  display: inline;
-} */
-/* Add some margins for each label */
-/* .form-inline label {
-  width: 20%;
-  color: red;
-  /* margin: 5px 0 5px 0; 
-} */
-
 /* Style the input fields */
 .form-inline input {
   /* width: 30%; */
@@ -121,16 +205,15 @@ body {
   border: 1px solid #ddd;
 }
 
-/* Style the submit button */
-.form-inline button {
-  padding: 10px 20px;
-  background-color: dodgerblue;
-  border: 1px solid #ddd;
-  color: white;
+/* Hint notes */
+.hint-notes h3 {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.form-inline button:hover {
-  background-color: royalblue;
+.hint-notes p .hint-definition {
+  font-weight: bold;
+  color: #e90c59;
 }
 
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
@@ -156,6 +239,10 @@ body {
 #solution-main {
   display: none;
   margin-bottom: 10vh;
+}
+
+.answer {
+  font-size: 3rem;
 }
 
 /* footer */
