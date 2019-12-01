@@ -23,6 +23,11 @@ body {
   /* background: url(./img/bg-img-2.jpg) center; */
 }
 
+.atom-loader {
+  color: #e90c59;
+  font-size: 150px;
+}
+
 /* Utility Classes */
 
 .main-cont {
