@@ -15,9 +15,13 @@ var firstDirect = document.querySelector(".first-direct");
 var secondDirect = document.querySelector(".second-direct");
 var firstInverse = document.querySelector(".first-inverse");
 var secondInverse = document.querySelector(".second-inverse");
+var loading = document.querySelector("#loading");
+var solution = document.querySelector("#solution-main");
 
 var firstButton = document.querySelector("#first-submit");
 var secondButton = document.querySelector("#second-submit");
+var answerMain = document.querySelector(".answer-main");
+var answerUnit = document.querySelector(".answer-unit");
 
 //functions
 firstButton.addEventListener("click", openSesame);
@@ -32,36 +36,50 @@ function openSecondSesame(e) {
   e.preventDefault();
 
   if (firstDirect.checked && secondInverse.checked) {
-    // rate = firstDirect.value;
-    // rat = secondInverse.value;
     var a =
       (inputOne.value * inputFive.value * inputThree.value) /
       (inputTwo.value * inputSix.value);
     console.log(a);
+    answerMain.innerHTML = a.toFixed(2);
+    answerUnit.innerHTML = inputFourUnit.value;
+    // return a;
   }
   if (firstInverse.checked && secondDirect.checked) {
-    // rater = firstInverse.value;
-    // ratt = secondDirect.value;
     var b =
       (inputOne.value * inputTwo.value * inputSix.value) /
       (inputFive.value * inputThree.value);
-
+    answerMain.innerHTML = b.toFixed(2);
+    answerUnit.innerHTML = inputFourUnit.value;
     console.log(b);
+    // return b;
   }
   if (firstDirect.checked && secondDirect.checked) {
-    // rater = firstDirect.value;
-    // ratt = secondDirect.value;
     var c =
       (inputOne.value * inputFive.value * inputSix.value) /
       (inputTwo.value * inputThree.value);
     console.log(c);
+    answerMain.innerHTML = c.toFixed(2);
+    answerUnit.innerHTML = inputFourUnit.value;
+    // return c;
   }
   if (firstInverse.checked && secondInverse.checked) {
-    // rater = firstInverse.value;
-    // ratt = secondInverse.value;
     var d =
       (inputOne.value * inputTwo.value * inputThree.value) /
       (inputFive.value * inputSix.value);
     console.log(d);
+    answerMain.innerHTML = d.toFixed(2);
+    answerUnit.innerHTML = inputFourUnit.value;
+    // return d;
   }
+
+  //loading style
+  loading.style.display = "block";
+
+  //set timeout for loader and for displaying result
+  setTimeout(function() {
+    loading.style.display = "none";
+
+    // Results jquery fade in
+    $("#solution-main").fadeIn(1200);
+  }, 1500);
 }

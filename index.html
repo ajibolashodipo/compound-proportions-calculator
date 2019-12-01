@@ -11,245 +11,293 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="#main-section">
-      <div class="container main-container">
-        <div class="header-title">
-          <h1>Compound Proportions Calculator</h1>
-        </div>
-        <div class="header-content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi
-            natus, eius quae culpa iure provident dolorem esse velit.
-          </p>
-        </div>
-        <div class="main-quantities">
-          <h2>Enter Calculation Parameters</h2>
-          <p>Please ensure that the unknown parameter is entered in column A</p>
-          <div class="secondary">
-            <!-- <div class="grid-elements"> -->
-            <form class="form-inline" action="/action_page.php">
-              <div class="grid-container">
-                <div class="grid-elements column-header grid-element-1a">
-                  <h3>Column A</h3>
-                </div>
-                <div class="grid-elements column-header grid-element-1b">
-                  <h3>Column B</h3>
-                </div>
-                <div class="grid-elements column-header grid-element-1c">
-                  <h3>Column C</h3>
-                </div>
-                <div class="grid-elements grid-element-1">
+    <div class="main-cont">
+      <div class="we-move">
+        <section id="main-section">
+          <div class="container main-container">
+            <div class="header-title">
+              <h1>Compound Proportions Calculator</h1>
+            </div>
+            <div class="header-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                animi natus, eius quae culpa iure provident dolorem esse velit.
+              </p>
+            </div>
+            <div class="main-quantities">
+              <h2>Enter Calculation Parameters</h2>
+              <p>
+                Please ensure that the unknown parameter is entered in column A
+              </p>
+              <div class="secondary">
+                <!-- <div class="grid-elements"> -->
+                <form class="form-inline" action="/action_page.php">
+                  <div class="grid-container">
+                    <div class="grid-elements column-header grid-element-1a">
+                      <h3>Column A</h3>
+                    </div>
+                    <div class="grid-elements column-header grid-element-1b">
+                      <h3>Column B</h3>
+                    </div>
+                    <div class="grid-elements column-header grid-element-1c">
+                      <h3>Column C</h3>
+                    </div>
+                    <div class="grid-elements grid-element-1">
+                      <input
+                        type="number"
+                        class="form-number"
+                        id="form-number-1"
+                        placeholder="Enter value"
+                        name="form-number"
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-1"
+                        class="form-unit"
+                        placeholder="unit"
+                        name="form-unit"
+                        value="unit1"
+                      />
+                    </div>
+                    <div class="grid-elements grid-element-2">
+                      <input
+                        type="number"
+                        class="form-number"
+                        id="form-number-2"
+                        placeholder="Enter value"
+                        name="form-number"
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-2"
+                        class="form-unit"
+                        placeholder="unit"
+                        name="form-unit"
+                        value="unit2"
+                      />
+                    </div>
+                    <div class="grid-elements grid-element-3">
+                      <input
+                        type="number"
+                        class="form-number"
+                        id="form-number-3"
+                        placeholder="Enter value"
+                        name="form-number"
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-3"
+                        placeholder="unit"
+                        class="form-unit"
+                        name="form-unit"
+                        value="unit3"
+                      />
+                    </div>
+                    <div class="grid-elements grid-element-4">
+                      <input
+                        class="form-number"
+                        type="text"
+                        id="form-number-4"
+                        placeholder="Enter value"
+                        name="form-number"
+                        value="unknown"
+                        disabled
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-4"
+                        placeholder="unit"
+                        class="form-unit"
+                        name="form-unit"
+                        value="unit1"
+                      />
+                    </div>
+                    <div class="grid-elements grid-element-5">
+                      <input
+                        class="form-number"
+                        type="number"
+                        id="form-number-5"
+                        placeholder="Enter value"
+                        name="form-number"
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-5"
+                        placeholder="unit"
+                        class="form-unit"
+                        name="form-unit"
+                        value="unit2"
+                      />
+                    </div>
+                    <div class="grid-elements grid-element-6">
+                      <input
+                        type="number"
+                        class="form-number"
+                        id="form-number-6"
+                        placeholder="Enter value"
+                        name="form-number"
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-6"
+                        placeholder="unit"
+                        class="form-unit"
+                        name="form-unit"
+                        value="unit3"
+                      />
+                    </div>
+                    <button id="first-submit" type="submit">Submit</button>
+                  </div>
+                </form>
+
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="confirmation">
+          <div class="container">
+            <form action="">
+              <div class="confirmation-div-1 border-div">
+                <p>
+                  What is the relationship between the column A (Principal
+                  Column) and column B?
+                </p>
+
+                <label class=""
+                  >Direct Proportion
                   <input
-                    type="number"
-                    class="form-number"
-                    id="form-number-1"
-                    placeholder="Enter value"
-                    name="form-number"
+                    class="first-direct"
+                    type="radio"
+                    checked=""
+                    name="radio"
+                    value="1"
                   />
+                  <span class="checkmark"></span>
+                </label>
+                <label class=""
+                  >Inverse Proportion
                   <input
-                    type="text"
-                    id="form-unit-1"
-                    class="form-unit"
-                    placeholder="unit"
-                    name="form-unit"
-                    value="unit1"
+                    class="first-inverse"
+                    checked=""
+                    type="radio"
+                    name="radio"
+                    value="2"
                   />
-                </div>
-                <div class="grid-elements grid-element-2">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="confirmation-div-2 border-div">
+                <p>
+                  What is the relationship between the column A (Principal
+                  Column) and column C?
+                </p>
+                <label class=""
+                  >Direct Proportion
                   <input
-                    type="number"
-                    class="form-number"
-                    id="form-number-2"
-                    placeholder="Enter value"
-                    name="form-number"
+                    class="second-direct"
+                    type="radio"
+                    checked=""
+                    name="radio-1"
+                    value="3"
                   />
+                  <span class="checkmark"></span>
+                </label>
+                <label class=""
+                  >Inverse Proportion
                   <input
-                    type="text"
-                    id="form-unit-2"
-                    class="form-unit"
-                    placeholder="unit"
-                    name="form-unit"
-                    value="unit2"
+                    class="second-inverse"
+                    type="radio"
+                    checked=""
+                    name="radio-1"
+                    value="4"
                   />
-                </div>
-                <div class="grid-elements grid-element-3">
-                  <input
-                    type="number"
-                    class="form-number"
-                    id="form-number-3"
-                    placeholder="Enter value"
-                    name="form-number"
-                  />
-                  <input
-                    type="text"
-                    id="form-unit-3"
-                    placeholder="unit"
-                    class="form-unit"
-                    name="form-unit"
-                    value="unit3"
-                  />
-                </div>
-                <div class="grid-elements grid-element-4">
-                  <input
-                    class="form-number"
-                    type="text"
-                    id="form-number-4"
-                    placeholder="Enter value"
-                    name="form-number"
-                    value="unknown"
-                    disabled
-                  />
-                  <input
-                    type="text"
-                    id="form-unit-4"
-                    placeholder="unit"
-                    class="form-unit"
-                    name="form-unit"
-                    value="unit1"
-                  />
-                </div>
-                <div class="grid-elements grid-element-5">
-                  <input
-                    class="form-number"
-                    type="number"
-                    id="form-number-5"
-                    placeholder="Enter value"
-                    name="form-number"
-                  />
-                  <input
-                    type="text"
-                    id="form-unit-5"
-                    placeholder="unit"
-                    class="form-unit"
-                    name="form-unit"
-                    value="unit2"
-                  />
-                </div>
-                <div class="grid-elements grid-element-6">
-                  <input
-                    type="number"
-                    class="form-number"
-                    id="form-number-6"
-                    placeholder="Enter value"
-                    name="form-number"
-                  />
-                  <input
-                    type="text"
-                    id="form-unit-6"
-                    placeholder="unit"
-                    class="form-unit"
-                    name="form-unit"
-                    value="unit3"
-                  />
-                </div>
-                <button id="first-submit" type="submit">Submit</button>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="hint-notes border-div">
+                <h3>NOTE</h3>
+                <p>
+                  Direct Proportion: An increase in one quantity results in an
+                  increase in the other.
+                  <a
+                    href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
+                    >Learn More</a
+                  >
+                </p>
+                <p>
+                  Inverse Proportion: An increase in one quantity results in a
+                  decrease in the other
+                  <a
+                    href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
+                    >Learn More</a
+                  >
+                </p>
+              </div>
+
+              <div>
+                <button id="second-submit" type="submit">Submit</button>
               </div>
             </form>
-
-            <!-- </div> -->
           </div>
+        </section>
+
+        <section id="loading" class="container">
+          <h3>Computing...</h3>
+          <img src="./img/Disk-0.6s-200px.gif" alt="loading-image" />
+        </section>
+        <section id="solution-main" class="container">
+          <div class="solution-div">
+            <p>
+              <span class="answer-pre">Answer:</span>
+              <span class="answer-main">200</span>
+              <span class="answer-unit">units</span>
+            </p>
+          </div>
+        </section>
+      </div>
+      <!-- <footer id="footer"></footer> -->
+      <footer id="real-footer">
+        <div class=" real-footer-section">
+          <h3>Designed by Ajibola Shodipo.</h3>
+          <ul>
+            <li>
+              <a href="http://www.twitter.com/sho_rendipity">
+                <i class="fab fa-twitter "></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ahmed-ajibola-shodipo/">
+                <i class="fab fa-linkedin "></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/ajibolashodipo">
+                <i class="fab fa-github "></i
+              ></a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </footer>
+    </div>
 
-    <section id="confirmation">
-      <div class="container">
-        <form action="">
-          <div class="confirmation-div-1 border-div">
-            <p>
-              What is the relationship between the column A (Principal Column)
-              and column B?
-            </p>
-
-            <label class=""
-              >Direct Proportion
-              <input
-                class="first-direct"
-                type="radio"
-                checked=""
-                name="radio"
-                value="1"
-              />
-              <span class="checkmark"></span>
-            </label>
-            <label class=""
-              >Inverse Proportion
-              <input
-                class="first-inverse"
-                checked=""
-                type="radio"
-                name="radio"
-                value="2"
-              />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div class="confirmation-div-2 border-div">
-            <p>
-              What is the relationship between the column A (Principal Column)
-              and column C?
-            </p>
-            <label class=""
-              >Direct Proportion
-              <input
-                class="second-direct"
-                type="radio"
-                checked=""
-                name="radio-1"
-                value="3"
-              />
-              <span class="checkmark"></span>
-            </label>
-            <label class=""
-              >Inverse Proportion
-              <input
-                class="second-inverse"
-                type="radio"
-                checked=""
-                name="radio-1"
-                value="4"
-              />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div class="hint-notes border-div">
-            <h3>NOTE</h3>
-            <p>
-              Direct Proportion: An increase in one quantity results in an
-              increase in the other.
-              <a
-                href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
-                >Learn More</a
-              >
-            </p>
-            <p>
-              Inverse Proportion: An increase in one quantity results in a
-              decrease in the other
-              <a
-                href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
-                >Learn More</a
-              >
-            </p>
-          </div>
-
-          <div>
-            <button id="second-submit" type="submit">Submit</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section id="loading"></section>
-    <section id="solution"></section>
-    <footer id="footer"></footer>
-
-    <script src="app.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
     <script
@@ -262,5 +310,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
