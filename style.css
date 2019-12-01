@@ -53,13 +53,13 @@
   font-size: 1.2rem;
 }
 
-#form-number {
-  width: 70%;
-  margin-right: 2.5%;
+.form-number {
+  width: 65%;
+  margin: 0 auto;
 }
 
-#form-unit {
-  width: 25%;
+.form-unit {
+  width: 35%;
 }
 
 .grid-elements:first-child {
@@ -120,4 +120,8 @@
     flex-direction: column;
     align-items: stretch;
   }
+}
+
+#confirmation {
+  display: none;
 }
