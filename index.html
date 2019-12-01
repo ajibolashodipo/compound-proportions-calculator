@@ -16,6 +16,18 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nixie+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Life+Savers:400,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
@@ -40,7 +52,8 @@
             <div class="main-quantities">
               <h2>Enter Calculation Parameters</h2>
               <p>
-                Please ensure that the unknown parameter is entered in column A
+                Please ensure that the unknown column is placed in
+                <span style="color:#e90c59">column A</span>
               </p>
               <div class="secondary">
                 <!-- <div class="grid-elements"> -->
@@ -159,7 +172,9 @@
                         value="unit3"
                       />
                     </div>
-                    <button id="first-submit" type="submit">Submit</button>
+                    <button class="button" id="first-submit" type="submit">
+                      Submit
+                    </button>
                   </div>
                 </form>
 
@@ -174,11 +189,14 @@
             <form action="">
               <div class="confirmation-div-1 border-div">
                 <p>
-                  What is the relationship between the column A (Principal
-                  Column) and column B?
+                  What is the relationship between the
+                  <span style="color: #e90c59"
+                    >column A (Principal Column)</span
+                  >
+                  and <span style="color: #265add">column B</span> ?
                 </p>
 
-                <label class=""
+                <label class="radio-label"
                   >Direct Proportion
                   <input
                     class="first-direct"
@@ -203,10 +221,13 @@
               </div>
               <div class="confirmation-div-2 border-div">
                 <p>
-                  What is the relationship between the column A (Principal
-                  Column) and column C?
+                  What is the relationship between the
+                  <span style="color: #e90c59"
+                    >column A (Principal Column)</span
+                  >
+                  and <span style="color:green">column C</span> ?
                 </p>
-                <label class=""
+                <label class="radio-label"
                   >Direct Proportion
                   <input
                     class="second-direct"
@@ -230,18 +251,18 @@
                 </label>
               </div>
               <div class="hint-notes border-div">
-                <h3>NOTE</h3>
+                <h3>Note</h3>
                 <p>
-                  Direct Proportion: An increase in one quantity results in an
-                  increase in the other.
+                  <span class="hint-definition">Direct Proportion:</span> An
+                  increase in one quantity results in an increase in the other.
                   <a
                     href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
                     >Learn More</a
                   >
                 </p>
                 <p>
-                  Inverse Proportion: An increase in one quantity results in a
-                  decrease in the other
+                  <span class="hint-definition">Inverse Proportion:</span> An
+                  increase in one quantity results in a decrease in the other
                   <a
                     href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
                     >Learn More</a
@@ -250,7 +271,9 @@
               </div>
 
               <div>
-                <button id="second-submit" type="submit">Submit</button>
+                <button class="button" id="second-submit" type="submit">
+                  Submit
+                </button>
               </div>
             </form>
           </div>
@@ -258,14 +281,14 @@
 
         <section id="loading" class="container">
           <h3>Computing...</h3>
-          <img src="./img/Disk-0.6s-200px.gif" alt="loading-image" />
+          <img src="./img/Disk-1s-200px.gif" alt="loading-image" />
         </section>
         <section id="solution-main" class="container">
           <div class="solution-div">
             <p>
-              <span class="answer-pre">Answer:</span>
-              <span class="answer-main">200</span>
-              <span class="answer-unit">units</span>
+              <span class=" answer answer-pre">Answer:</span>
+              <span class=" answer answer-main">200</span>
+              <span class=" answer answer-unit">units</span>
             </p>
           </div>
         </section>
