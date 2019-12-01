@@ -42,118 +42,110 @@
                   <h3>Column C</h3>
                 </div>
                 <div class="grid-elements grid-element-1">
-                  <!-- <label class="random"> -->
-
-                  <!-- <label for="">
-                    <input type="radio" name="gender" value="male" /> Unknown
-                  </label> -->
-
-                  <!-- </label> -->
-                  <!-- <label for="pwd">Password:</label> -->
                   <input
                     type="number"
-                    id="form-number"
+                    class="form-number"
+                    id="form-number-1"
                     placeholder="Enter value"
                     name="form-number"
                   />
                   <input
                     type="text"
-                    id="form-unit"
+                    id="form-unit-1"
+                    class="form-unit"
                     placeholder="unit"
                     name="form-unit"
+                    value="unit1"
                   />
                 </div>
                 <div class="grid-elements grid-element-2">
-                  <!-- <label for="">
-                    <input type="radio" name="gender" value="male" /> Unknown
-                  </label> -->
-                  <!-- <label for="pwd">Password:</label> -->
                   <input
                     type="number"
-                    id="form-number"
+                    class="form-number"
+                    id="form-number-2"
                     placeholder="Enter value"
                     name="form-number"
                   />
                   <input
                     type="text"
-                    id="form-unit"
+                    id="form-unit-2"
+                    class="form-unit"
                     placeholder="unit"
                     name="form-unit"
+                    value="unit2"
                   />
                 </div>
                 <div class="grid-elements grid-element-3">
-                  <!-- <label for="">
-                    <input type="radio" name="gender" value="male" /> Unknown
-                  </label> -->
-                  <!-- <label for="pwd">Password:</label> -->
                   <input
                     type="number"
-                    id="form-number"
+                    class="form-number"
+                    id="form-number-3"
                     placeholder="Enter value"
                     name="form-number"
                   />
                   <input
                     type="text"
-                    id="form-unit"
+                    id="form-unit-3"
                     placeholder="unit"
+                    class="form-unit"
                     name="form-unit"
+                    value="unit3"
                   />
                 </div>
                 <div class="grid-elements grid-element-4">
-                  <!-- <label for="">
-                    <input type="radio" name="gender" value="male" /> Unknown
-                  </label> -->
-                  <!-- <label for="pwd">Password:</label> -->
                   <input
-                    type="number"
-                    id="form-number"
+                    class="form-number"
+                    type="text"
+                    id="form-number-4"
                     placeholder="Enter value"
                     name="form-number"
+                    value="unknown"
+                    disabled
                   />
                   <input
                     type="text"
-                    id="form-unit"
+                    id="form-unit-4"
                     placeholder="unit"
+                    class="form-unit"
                     name="form-unit"
+                    value="unit1"
                   />
                 </div>
                 <div class="grid-elements grid-element-5">
-                  <!-- <label for="">
-                    <input type="radio" name="gender" value="male" /> Unknown
-                  </label> -->
-                  <!-- <label for="pwd">Password:</label> -->
                   <input
+                    class="form-number"
                     type="number"
-                    id="form-number"
+                    id="form-number-5"
                     placeholder="Enter value"
                     name="form-number"
                   />
                   <input
                     type="text"
-                    id="form-unit"
+                    id="form-unit-5"
                     placeholder="unit"
+                    class="form-unit"
                     name="form-unit"
+                    value="unit2"
                   />
                 </div>
                 <div class="grid-elements grid-element-6">
-                  <!-- <label for="">
-                    <input type="radio" name="gender" value="male" /> Unknown
-                  </label> -->
-                  <!-- <label for="pwd">Password:</label> -->
                   <input
                     type="number"
-                    id="form-number"
+                    class="form-number"
+                    id="form-number-6"
                     placeholder="Enter value"
                     name="form-number"
                   />
                   <input
                     type="text"
-                    id="form-unit"
+                    id="form-unit-6"
                     placeholder="unit"
+                    class="form-unit"
                     name="form-unit"
+                    value="unit3"
                   />
                 </div>
-                <button type="submit">Submit</button>
+                <button id="first-submit" type="submit">Submit</button>
               </div>
             </form>
 
@@ -174,12 +166,24 @@
 
             <label class=""
               >Direct Proportion
-              <input type="radio" checked="checked" name="radio" />
+              <input
+                class="first-direct"
+                type="radio"
+                checked=""
+                name="radio"
+                value="1"
+              />
               <span class="checkmark"></span>
             </label>
             <label class=""
               >Inverse Proportion
-              <input type="radio" name="radio" />
+              <input
+                class="first-inverse"
+                checked=""
+                type="radio"
+                name="radio"
+                value="2"
+              />
               <span class="checkmark"></span>
             </label>
           </div>
@@ -190,12 +194,24 @@
             </p>
             <label class=""
               >Direct Proportion
-              <input type="radio" checked="checked" name="radio-1" />
+              <input
+                class="second-direct"
+                type="radio"
+                checked=""
+                name="radio-1"
+                value="3"
+              />
               <span class="checkmark"></span>
             </label>
             <label class=""
               >Inverse Proportion
-              <input type="radio" name="radio-1" />
+              <input
+                class="second-inverse"
+                type="radio"
+                checked=""
+                name="radio-1"
+                value="4"
+              />
               <span class="checkmark"></span>
             </label>
           </div>
@@ -220,7 +236,7 @@
           </div>
 
           <div>
-            <button type="submit">Submit</button>
+            <button id="second-submit" type="submit">Submit</button>
           </div>
         </form>
       </div>
