@@ -105,6 +105,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
   width: 100%;
+  /* grid-gap: 5%; */
 }
 
 .grid-elements {
@@ -210,6 +211,27 @@ body {
   border: 1px solid #ddd;
 }
 
+/* error message */
+.err-message {
+  visibility: hidden;
+  border: 1px solid #e90c59;
+  background-color: #e90c59;
+  border-radius: 5px;
+  font-size: 1rem;
+  /* font-weight: bold; */
+  width: 65%;
+  margin: 5% auto 0;
+  padding: 2%;
+  letter-spacing: 0.1rem;
+}
+
+.err-message .err-specific {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
 /* Hint notes */
 .hint-notes h3 {
   text-transform: uppercase;
@@ -248,6 +270,19 @@ body {
 
 .answer {
   font-size: 3rem;
+  /* padding: 2.5%; */
+}
+.answer-main {
+  padding-left: 5%;
+  padding-right: 2.5%;
+}
+
+#reload-code {
+  display: none;
+  border: none;
+}
+#reload-code button {
+  width: 40%;
 }
 
 /* footer */

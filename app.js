@@ -17,6 +17,8 @@ var firstInverse = document.querySelector(".first-inverse");
 var secondInverse = document.querySelector(".second-inverse");
 var loading = document.querySelector("#loading");
 var solution = document.querySelector("#solution-main");
+var reload = document.querySelector("#reload-code");
+var errMessage = document.querySelector(".err-message");
 
 var firstButton = document.querySelector("#first-submit");
 var secondButton = document.querySelector("#second-submit");
@@ -26,10 +28,39 @@ var answerUnit = document.querySelector(".answer-unit");
 //functions
 firstButton.addEventListener("click", openSesame);
 secondButton.addEventListener("click", openSecondSesame);
+reload.addEventListener("click", reloadPage);
 
 function openSesame(e) {
   e.preventDefault();
-  confirmation.style.display = "block";
+  //input validation against empty input
+  if (
+    !inputOne.value ||
+    !inputTwo.value ||
+    !inputThree.value ||
+    !inputFour.value ||
+    !inputFive.value ||
+    !inputSix.value
+  ) {
+    console.log("tobilobaaaa");
+    errMessage.style.visibility = "visible";
+    setTimeout(function() {
+      errMessage.style.visibility = "hidden";
+    }, 2000);
+
+    return;
+  } else {
+    confirmation.style.display = "block";
+  }
+}
+
+function reloadPage(e) {
+  //to reload the page
+  window.location.reload();
+
+  //to ensure the page begins from the very top position
+  $(document).ready(function() {
+    $(window).scrollTop(0);
+  });
 }
 
 function openSecondSesame(e) {
@@ -72,6 +103,10 @@ function openSecondSesame(e) {
     // return d;
   }
 
+  // to conceal the answer key on multiple clicks on second submit
+  solution.style.display = "none";
+  reload.style.display = "none";
+
   //loading style
   loading.style.display = "block";
 
@@ -80,6 +115,7 @@ function openSecondSesame(e) {
     loading.style.display = "none";
 
     // Results jquery fade in
-    $("#solution-main").fadeIn(1200);
+    $("#solution-main").fadeIn(1000);
+    $("#reload-code").fadeIn(1200);
   }, 1500);
 }
