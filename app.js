@@ -1,3 +1,8 @@
+//to load the page from the very top. Every single time
+$(window).on("beforeunload", function() {
+  $(window).scrollTop(0);
+});
+
 var inputOne = document.getElementById("form-number-1");
 var inputOneUnit = document.getElementById("form-unit-1");
 var inputTwo = document.getElementById("form-number-2");
@@ -29,6 +34,26 @@ var answerUnit = document.querySelector(".answer-unit");
 firstButton.addEventListener("click", openSesame);
 secondButton.addEventListener("click", openSecondSesame);
 reload.addEventListener("click", reloadPage);
+
+// smooth scrolling
+$("#first-submit").click(function(e) {
+  e.preventDefault();
+  $("html, body").animate(
+    {
+      scrollTop: $("#first-submit").offset().top + 290
+    },
+    1200
+  );
+});
+$("#second-submit").click(function(e) {
+  e.preventDefault();
+  $("html, body").animate(
+    {
+      scrollTop: $("#second-submit").offset().top + 200
+    },
+    1200
+  );
+});
 
 function openSesame(e) {
   e.preventDefault();

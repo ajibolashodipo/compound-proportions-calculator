@@ -6,7 +6,8 @@
   /* font-family: "Nixie One", cursive; */
   font-family: "Life Savers", cursive;
   /* font-weight: 700; */
-  /* color: white; */
+  color: white;
+  /* color: black; */
 }
 ul {
   padding: 0;
@@ -20,12 +21,22 @@ html {
 body {
   min-height: 100%;
   width: 100%;
-  /* background: url(./img/bg-img-2.jpg) center; */
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(./img/nature-4407819_960_720.png);
 }
+
+/* input {
+  background-color: grey;
+} */
 
 .atom-loader {
   color: #e90c59;
   font-size: 150px;
+}
+
+.main-container {
+  border: 1px solid green;
+  border-radius: 10px;
 }
 
 /* Utility Classes */
@@ -47,6 +58,7 @@ body {
 .header-content p {
   letter-spacing: 0.1rem;
   font-size: 1.2rem;
+  margin: 2.5% 0 5%;
 }
 
 .main-quantities p {
@@ -62,8 +74,8 @@ body {
   margin: 5% auto;
   /* margin-bottom: 10vh !important; */
   padding: 2.5%;
-  border: 1px solid green;
-  border-radius: 10px;
+  /* border: 1px solid green; */
+  /* border-radius: 10px; */
   text-align: center;
   /* padding: 5%; */
 }
@@ -91,7 +103,7 @@ body {
   display: inline-block;
   font-size: 16px;
   width: 10rem;
-  margin: auto;
+  margin: 5% auto 0;
 }
 
 .button:hover {
@@ -106,6 +118,12 @@ body {
   margin: auto;
   width: 100%;
   /* grid-gap: 5%; */
+}
+
+.secondary form .form-number,
+.secondary form .form-unit {
+  color: black;
+  font-weight: bold;
 }
 
 .grid-elements {
@@ -123,32 +141,40 @@ body {
 .grid-element-1,
 .grid-element-4 {
   border: 1px solid #e90c59;
+  color: #e90c59;
 }
 
 .grid-element-1 input::placeholder,
-.grid-element-4 input::placeholder {
-  /* font-weight: bold; */
+.grid-element-1 input[value],
+.grid-element-4 input[value] {
+  font-weight: bold;
   color: #e90c59;
 }
 /* grids 2 and 5 */
 .grid-element-2,
 .grid-element-5 {
   border: 1px solid #265add;
+  font-weight: bold;
 }
 
 .grid-element-2 input::placeholder,
-.grid-element-5 input::placeholder {
-  /* font-weight: bold; */
+.grid-element-5 input::placeholder,
+.grid-element-2 input[value],
+.grid-element-5 input[value] {
+  font-weight: bold;
   color: #265add;
 }
 .grid-element-3,
 .grid-element-6 {
   border: 1px solid green;
+  font-weight: bold;
 }
 
 .grid-element-3 input::placeholder,
-.grid-element-6 input::placeholder {
-  /* font-weight: bold; */
+.grid-element-6 input::placeholder,
+.grid-element-3 input[value],
+.grid-element-6 input[value] {
+  font-weight: bold;
   color: green;
 }
 
@@ -193,6 +219,7 @@ body {
 
 .grid-container button {
   grid-column: 2/3;
+  grid-auto-rows: 200px !important;
 }
 /* Style the form - display items horizontally */
 .form-inline {
@@ -262,10 +289,18 @@ body {
 
 #loading {
   display: none;
+  border: none;
+}
+
+#loading h3 {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
 }
 #solution-main {
   display: none;
   margin-bottom: 10vh;
+  border: 1px solid green;
+  border-radius: 10px;
 }
 
 .answer {
