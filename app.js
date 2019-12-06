@@ -40,7 +40,7 @@ $("#first-submit").click(function(e) {
   e.preventDefault();
   $("html, body").animate(
     {
-      scrollTop: $("#first-submit").offset().top
+      scrollTop: $("#first-submit").offset().top + 100
     },
     1200
   );
