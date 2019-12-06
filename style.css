@@ -6,8 +6,8 @@
   /* font-family: "Nixie One", cursive; */
   font-family: "Life Savers", cursive;
   /* font-weight: 700; */
-  color: white;
-  /* color: black; */
+  /* color: white; */
+  color: black;
 }
 ul {
   padding: 0;
@@ -21,8 +21,9 @@ html {
 body {
   min-height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url(./img/nature-4407819_960_720.png);
+  /* background: black; */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./img/nature-4407819_960_720.png); */
 }
 
 /* input {
@@ -65,6 +66,11 @@ body {
   letter-spacing: 0.1rem;
   font-size: 1.1rem;
 }
+.main-quantities p::before {
+  content: "**";
+  color: #e90c59;
+}
+
 .main-quantities h2 {
   font-weight: bold;
 }
@@ -118,6 +124,15 @@ body {
   margin: auto;
   width: 100%;
   /* grid-gap: 5%; */
+}
+
+.grid-major {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-major-4 {
+  grid-column: 2/3;
 }
 
 .secondary form .form-number,
@@ -301,6 +316,11 @@ body {
   margin-bottom: 10vh;
   border: 1px solid green;
   border-radius: 10px;
+  width: 80%;
+
+  margin: 5% auto;
+  /* margin-bottom: 10vh !important; */
+  padding: 2.5%;
 }
 
 .answer {
@@ -375,5 +395,42 @@ body {
   .real-footer-section .fab {
     font-size: 1.5rem;
     padding: 15%;
+  }
+}
+
+/* media */
+@media only screen and (max-width: 768px) {
+  .container {
+    border: none;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    border: none;
+    width: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+    /* grid-gap: 5%; */
+  }
+
+  button #first-submit {
+    /* grid-column: 1 !important; */
+    height: 100%;
+    width: 100%;
+  }
+
+  #reloader {
+    width: 80% !important;
+  }
+
+  .answer {
+    font-size: 2rem;
+    /* padding: 2.5%; */
   }
 }
