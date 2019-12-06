@@ -6,8 +6,8 @@
   /* font-family: "Nixie One", cursive; */
   font-family: "Life Savers", cursive;
   /* font-weight: 700; */
-  /* color: white; */
-  color: black;
+  color: white;
+  /* color: black; */
 }
 ul {
   padding: 0;
@@ -21,15 +21,10 @@ body {
   min-height: 100%;
   width: 100%;
   position: relative;
-
   /* background: black; */
-  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(./img/nature-4407819_960_720.png); */
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./img/nature-4407819_960_720.png);
 }
-
-/* input {
-  background-color: grey;
-} */
 
 .atom-loader {
   color: #e90c59;
@@ -43,11 +38,6 @@ body {
 
 /* Utility Classes */
 
-/* .main-cont {
-  position: relative;
-  min-height: 100%;
-  width: 100%;
-} */
 .we-move {
   padding-bottom: 10vh;
   font-weight: bold;
@@ -55,17 +45,43 @@ body {
 
 .header-title h1 {
   font-weight: bold;
+  font-size: 3rem;
+  color: orange;
 }
 
 .header-content p {
   letter-spacing: 0.1rem;
   font-size: 1.2rem;
-  margin: 2.5% 0 5%;
+  margin: 5% 0 5%;
+  font-style: italic;
 }
 
 .main-quantities p {
   letter-spacing: 0.1rem;
   font-size: 1.1rem;
+  margin-bottom: 2.5%;
+}
+
+.main-quantities h2 {
+  color: orange;
+}
+
+@media only screen and (max-width: 576px) {
+  .header-title h1 {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .header-content p {
+    letter-spacing: 0.06rem;
+    font-size: 1.2rem;
+    margin: 7.5% 0 7.5%;
+  }
+
+  .main-quantities p {
+    letter-spacing: 0.06rem;
+    font-size: 1rem;
+    margin-bottom: 10% !important;
+  }
 }
 .main-quantities p::before {
   content: "**";
@@ -279,6 +295,7 @@ body {
 .hint-notes h3 {
   text-transform: uppercase;
   font-weight: bold;
+  color: orange;
 }
 
 .hint-notes p .hint-definition {
