@@ -40,7 +40,7 @@ $("#first-submit").click(function(e) {
   e.preventDefault();
   $("html, body").animate(
     {
-      scrollTop: $("#first-submit").offset().top + 290
+      scrollTop: $("#first-submit").offset().top + 260
     },
     1200
   );
@@ -66,7 +66,7 @@ function openSesame(e) {
     !inputFive.value ||
     !inputSix.value
   ) {
-    console.log("tobilobaaaa");
+    // console.log("tobilobaaaa");
     errMessage.style.visibility = "visible";
     setTimeout(function() {
       errMessage.style.visibility = "hidden";
