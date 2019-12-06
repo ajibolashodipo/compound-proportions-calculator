@@ -36,315 +36,311 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main-cont">
-      <div class="we-move">
-        <section id="main-section">
-          <div class="container main-container">
-            <div class="header-title">
-              <h1>Compound Proportions Calculator</h1>
-            </div>
-            <div class="header-content">
-              <p>
-                Abandon all fear of compound proportions, ye who enter here
-              </p>
-            </div>
-            <div class="main-quantities">
-              <h2>Enter Calculation Parameters</h2>
-              <p>
-                Please ensure that the unknown column is placed in
-                <span style="color:#e90c59">column A</span>
-              </p>
-              <div class="secondary">
-                <!-- <div class="grid-elements"> -->
-                <form class="form-inline" action="#">
-                  <div class="grid-container">
-                    <div class="grid-major grid-major-1">
-                      <div class="grid-elements column-header grid-element-1a">
-                        <h3>Column A</h3>
-                      </div>
-                      <div class="grid-elements grid-element-1">
-                        <input
-                          type="number"
-                          class="form-number"
-                          id="form-number-1"
-                          placeholder="Enter value"
-                          name="form-number"
-                        />
-                        <input
-                          type="text"
-                          id="form-unit-1"
-                          class="form-unit"
-                          placeholder="unit"
-                          name="form-unit"
-                          value="unit1"
-                        />
-                      </div>
-                      <div class="grid-elements grid-element-4">
-                        <input
-                          class="form-number"
-                          type="text"
-                          id="form-number-4"
-                          placeholder="Enter value"
-                          name="form-number"
-                          value="unknown"
-                          disabled
-                        />
-                        <input
-                          type="text"
-                          id="form-unit-4"
-                          placeholder="unit"
-                          class="form-unit"
-                          name="form-unit"
-                          value="unit1"
-                        />
-                      </div>
+    <!-- <div class="main-cont"> -->
+    <div class="we-move">
+      <section id="main-section">
+        <div class="container main-container">
+          <div class="header-title">
+            <h1>Compound Proportions Calculator</h1>
+          </div>
+          <div class="header-content">
+            <p>
+              Abandon all fear of compound proportions, ye who enter here
+            </p>
+          </div>
+          <div class="main-quantities">
+            <h2>Enter Calculation Parameters</h2>
+            <p>
+              Please ensure that the unknown column is placed in
+              <span style="color:#e90c59">column A</span>
+            </p>
+            <div class="secondary">
+              <!-- <div class="grid-elements"> -->
+              <form class="form-inline" action="#">
+                <div class="grid-container">
+                  <div class="grid-major grid-major-1">
+                    <div class="grid-elements column-header grid-element-1a">
+                      <h3>Column A</h3>
                     </div>
-                    <div class="grid-major grid-major-2">
-                      <div class="grid-elements column-header grid-element-1b">
-                        <h3>Column B</h3>
-                      </div>
-                      <div class="grid-elements grid-element-2">
-                        <input
-                          type="number"
-                          class="form-number"
-                          id="form-number-2"
-                          placeholder="Enter value"
-                          name="form-number"
-                        />
-                        <input
-                          type="text"
-                          id="form-unit-2"
-                          class="form-unit"
-                          placeholder="unit"
-                          name="form-unit"
-                          value="unit2"
-                        />
-                      </div>
-                      <div class="grid-elements grid-element-5">
-                        <input
-                          class="form-number"
-                          type="number"
-                          id="form-number-5"
-                          placeholder="Enter value"
-                          name="form-number"
-                        />
-                        <input
-                          type="text"
-                          id="form-unit-5"
-                          placeholder="unit"
-                          class="form-unit"
-                          name="form-unit"
-                          value="unit2"
-                        />
-                      </div>
+                    <div class="grid-elements grid-element-1">
+                      <input
+                        type="number"
+                        class="form-number"
+                        id="form-number-1"
+                        placeholder="Enter value"
+                        name="form-number"
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-1"
+                        class="form-unit"
+                        placeholder="unit"
+                        name="form-unit"
+                        value="unit1"
+                      />
                     </div>
-                    <div class="grid-major grid-major-3">
-                      <div class="grid-elements column-header grid-element-1c">
-                        <h3>Column C</h3>
-                      </div>
-                      <div class="grid-elements grid-element-3">
-                        <input
-                          type="number"
-                          class="form-number"
-                          id="form-number-3"
-                          placeholder="Enter value"
-                          name="form-number"
-                        />
-                        <input
-                          type="text"
-                          id="form-unit-3"
-                          placeholder="unit"
-                          class="form-unit"
-                          name="form-unit"
-                          value="unit3"
-                        />
-                      </div>
-                      <div class="grid-elements grid-element-6">
-                        <input
-                          type="number"
-                          class="form-number"
-                          id="form-number-6"
-                          placeholder="Enter value"
-                          name="form-number"
-                        />
-                        <input
-                          type="text"
-                          id="form-unit-6"
-                          placeholder="unit"
-                          class="form-unit"
-                          name="form-unit"
-                          value="unit3"
-                        />
-                      </div>
-                    </div>
-                    <div class="grid-major grid-major-4">
-                      <button class="button" id="first-submit" type="submit">
-                        Submit
-                      </button>
+                    <div class="grid-elements grid-element-4">
+                      <input
+                        class="form-number"
+                        type="text"
+                        id="form-number-4"
+                        placeholder="Enter value"
+                        name="form-number"
+                        value="unknown"
+                        disabled
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-4"
+                        placeholder="unit"
+                        class="form-unit"
+                        name="form-unit"
+                        value="unit1"
+                      />
                     </div>
                   </div>
-                </form>
+                  <div class="grid-major grid-major-2">
+                    <div class="grid-elements column-header grid-element-1b">
+                      <h3>Column B</h3>
+                    </div>
+                    <div class="grid-elements grid-element-2">
+                      <input
+                        type="number"
+                        class="form-number"
+                        id="form-number-2"
+                        placeholder="Enter value"
+                        name="form-number"
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-2"
+                        class="form-unit"
+                        placeholder="unit"
+                        name="form-unit"
+                        value="unit2"
+                      />
+                    </div>
+                    <div class="grid-elements grid-element-5">
+                      <input
+                        class="form-number"
+                        type="number"
+                        id="form-number-5"
+                        placeholder="Enter value"
+                        name="form-number"
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-5"
+                        placeholder="unit"
+                        class="form-unit"
+                        name="form-unit"
+                        value="unit2"
+                      />
+                    </div>
+                  </div>
+                  <div class="grid-major grid-major-3">
+                    <div class="grid-elements column-header grid-element-1c">
+                      <h3>Column C</h3>
+                    </div>
+                    <div class="grid-elements grid-element-3">
+                      <input
+                        type="number"
+                        class="form-number"
+                        id="form-number-3"
+                        placeholder="Enter value"
+                        name="form-number"
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-3"
+                        placeholder="unit"
+                        class="form-unit"
+                        name="form-unit"
+                        value="unit3"
+                      />
+                    </div>
+                    <div class="grid-elements grid-element-6">
+                      <input
+                        type="number"
+                        class="form-number"
+                        id="form-number-6"
+                        placeholder="Enter value"
+                        name="form-number"
+                      />
+                      <input
+                        type="text"
+                        id="form-unit-6"
+                        placeholder="unit"
+                        class="form-unit"
+                        name="form-unit"
+                        value="unit3"
+                      />
+                    </div>
+                  </div>
+                  <div class="grid-major grid-major-4">
+                    <button class="button" id="first-submit" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
 
-                <!-- </div> -->
-              </div>
-              <div class="err-message">
-                <h4 class="err-specific">
-                  Error: One or more empty input field(s)
-                </h4>
-              </div>
+              <!-- </div> -->
+            </div>
+            <div class="err-message">
+              <h4 class="err-specific">
+                Error: One or more empty input field(s)
+              </h4>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="confirmation">
-          <div class="container">
-            <form action="">
-              <div class="confirmation-div-1 border-div">
-                <p>
-                  What is the relationship between the
-                  <span style="color: #e90c59"
-                    >column A (Principal Column)</span
-                  >
-                  and <span style="color: #265add">column B</span> ?
-                </p>
+      <section id="confirmation">
+        <div class="container">
+          <form action="">
+            <div class="confirmation-div-1 border-div">
+              <p>
+                What is the relationship between the
+                <span style="color: #e90c59">column A (Principal Column)</span>
+                and <span style="color: #265add">column B</span> ?
+              </p>
 
-                <label class="radio-label"
-                  >Direct Proportion
-                  <input
-                    class="first-direct"
-                    type="radio"
-                    checked=""
-                    name="radio"
-                    value="1"
-                  />
-                  <span class="checkmark"></span>
-                </label>
-                <label class=""
-                  >Inverse Proportion
-                  <input
-                    class="first-inverse"
-                    checked=""
-                    type="radio"
-                    name="radio"
-                    value="2"
-                  />
-                  <span class="checkmark"></span>
-                </label>
-              </div>
-              <div class="confirmation-div-2 border-div">
-                <p>
-                  What is the relationship between the
-                  <span style="color: #e90c59"
-                    >column A (Principal Column)</span
-                  >
-                  and <span style="color:green">column C</span> ?
-                </p>
-                <label class="radio-label"
-                  >Direct Proportion
-                  <input
-                    class="second-direct"
-                    type="radio"
-                    checked=""
-                    name="radio-1"
-                    value="3"
-                  />
-                  <span class="checkmark"></span>
-                </label>
-                <label class=""
-                  >Inverse Proportion
-                  <input
-                    class="second-inverse"
-                    type="radio"
-                    checked=""
-                    name="radio-1"
-                    value="4"
-                  />
-                  <span class="checkmark"></span>
-                </label>
-              </div>
-              <div class="hint-notes border-div">
-                <h3>Note</h3>
-                <p>
-                  <span class="hint-definition">Direct Proportion:</span> An
-                  increase in one quantity results in an increase in the other.
-                  <a
-                    href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
-                    target="_blank"
-                    >Learn More</a
-                  >
-                </p>
-                <p>
-                  <span class="hint-definition">Inverse Proportion:</span> An
-                  increase in one quantity results in a decrease in the other
-                  <a
-                    href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
-                    target="_blank"
-                    >Learn More</a
-                  >
-                </p>
-              </div>
+              <label class="radio-label"
+                >Direct Proportion
+                <input
+                  class="first-direct"
+                  type="radio"
+                  checked=""
+                  name="radio"
+                  value="1"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label class=""
+                >Inverse Proportion
+                <input
+                  class="first-inverse"
+                  checked=""
+                  type="radio"
+                  name="radio"
+                  value="2"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="confirmation-div-2 border-div">
+              <p>
+                What is the relationship between the
+                <span style="color: #e90c59">column A (Principal Column)</span>
+                and <span style="color:green">column C</span> ?
+              </p>
+              <label class="radio-label"
+                >Direct Proportion
+                <input
+                  class="second-direct"
+                  type="radio"
+                  checked=""
+                  name="radio-1"
+                  value="3"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label class=""
+                >Inverse Proportion
+                <input
+                  class="second-inverse"
+                  type="radio"
+                  checked=""
+                  name="radio-1"
+                  value="4"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="hint-notes border-div">
+              <h3>Note</h3>
+              <p>
+                <span class="hint-definition">Direct Proportion:</span> An
+                increase in one quantity results in an increase in the other.
+                <a
+                  href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </p>
+              <p>
+                <span class="hint-definition">Inverse Proportion:</span> An
+                increase in one quantity results in a decrease in the other
+                <a
+                  href="https://www.mathsisfun.com/algebra/directly-inversely-proportional.html"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </p>
+            </div>
 
-              <div>
-                <button class="button" id="second-submit" type="submit">
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-        </section>
+            <div>
+              <button class="button" id="second-submit" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
 
-        <section id="loading" class="container">
-          <h3>Computing...</h3>
-          <!-- <img
+      <section id="loading" class="container">
+        <h3>Computing...</h3>
+        <!-- <img
             src="./img/loading-ajax.gif"
             height="100px"
             width="100px"
             alt="loading-image"
           /> -->
-          <div class="loading-image-div">
-            <i class=" atom-loader fas fa-atom fa-4x fa-spin"></i>
-          </div>
-        </section>
-        <section id="solution-main" class="container">
-          <div class="solution-div">
-            <p>
-              <span class=" answer answer-pre">Answer:</span>
-              <span class=" answer answer-main">200</span>
-              <span class=" answer answer-unit">units</span>
-            </p>
-          </div>
-        </section>
-
-        <section id="reload-code" class="container">
-          <button class="button" id="reloader" type="button">
-            Let's go again
-          </button>
-        </section>
-      </div>
-      <!-- <footer id="footer"></footer> -->
-      <footer id="real-footer">
-        <div class=" real-footer-section">
-          <h3>Designed by Ajibola Shodipo.</h3>
-          <ul>
-            <li>
-              <a href="http://www.twitter.com/sho_rendipity">
-                <i class="fab fa-twitter "></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/ahmed-ajibola-shodipo/">
-                <i class="fab fa-linkedin fa-spin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/ajibolashodipo">
-                <i class="fab fa-github "></i
-              ></a>
-            </li>
-          </ul>
+        <div class="loading-image-div">
+          <i class=" atom-loader fas fa-atom fa-4x fa-spin"></i>
         </div>
-      </footer>
+      </section>
+      <section id="solution-main" class="container">
+        <div class="solution-div">
+          <p>
+            <span class=" answer answer-pre">Answer:</span>
+            <span class=" answer answer-main">200</span>
+            <span class=" answer answer-unit">units</span>
+          </p>
+        </div>
+      </section>
+
+      <section id="reload-code" class="container">
+        <button class="button" id="reloader" type="button">
+          Let's go again
+        </button>
+      </section>
     </div>
+    <!-- <footer id="footer"></footer> -->
+    <footer id="real-footer">
+      <div class=" real-footer-section">
+        <h3>Designed by Ajibola Shodipo.</h3>
+        <ul>
+          <li>
+            <a href="http://www.twitter.com/sho_rendipity">
+              <i class="fab fa-twitter "></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ahmed-ajibola-shodipo/">
+              <i class="fab fa-linkedin fa-spin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/ajibolashodipo">
+              <i class="fab fa-github "></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- </div> -->
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"

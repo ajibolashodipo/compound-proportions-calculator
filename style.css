@@ -15,12 +15,13 @@ ul {
 }
 html {
   height: 100%;
-  position: relative;
 }
 
 body {
   min-height: 100%;
   width: 100%;
+  position: relative;
+
   /* background: black; */
   /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(./img/nature-4407819_960_720.png); */
@@ -42,11 +43,11 @@ body {
 
 /* Utility Classes */
 
-.main-cont {
+/* .main-cont {
   position: relative;
   min-height: 100%;
   width: 100%;
-}
+} */
 .we-move {
   padding-bottom: 10vh;
   font-weight: bold;
@@ -413,17 +414,22 @@ body {
 
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     margin: auto;
     width: 100%;
     /* grid-gap: 5%; */
   }
 
-  button #first-submit {
-    /* grid-column: 1 !important; */
+  .grid-major-4 {
+    /* grid-column: 2/3; */
+    grid-column: 1;
+  }
+
+  /* button #first-submit {
+    grid-column: 1 !important;
     height: 100%;
     width: 100%;
-  }
+  } */
 
   #reloader {
     width: 80% !important;
