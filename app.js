@@ -30,6 +30,26 @@ var secondButton = document.querySelector("#second-submit");
 var answerMain = document.querySelector(".answer-main");
 var answerUnit = document.querySelector(".answer-unit");
 
+//to make second row of units shadow the first row of units and vice versa
+$("#form-unit-1").keyup(function() {
+  inputFourUnit.value = inputOneUnit.value;
+});
+$("#form-unit-2").keyup(function() {
+  inputFiveUnit.value = inputTwoUnit.value;
+});
+$("#form-unit-3").keyup(function() {
+  inputSixUnit.value = inputThreeUnit.value;
+});
+$("#form-unit-4").keyup(function() {
+  inputOneUnit.value = inputFourUnit.value;
+});
+$("#form-unit-5").keyup(function() {
+  inputTwoUnit.value = inputFiveUnit.value;
+});
+$("#form-unit-6").keyup(function() {
+  inputThreeUnit.value = inputSixUnit.value;
+});
+
 //functions
 firstButton.addEventListener("click", openSesame);
 secondButton.addEventListener("click", openSecondSesame);
@@ -57,6 +77,10 @@ $("#second-submit").click(function(e) {
 
 function openSesame(e) {
   e.preventDefault();
+  //to make second row of units shadow the first row of units
+  console.log(inputOneUnit.value);
+  inputFourUnit.value = inputOneUnit.value;
+
   //input validation against empty input
   if (
     !inputOne.value ||
@@ -95,7 +119,7 @@ function openSecondSesame(e) {
     var a =
       (inputOne.value * inputFive.value * inputThree.value) /
       (inputTwo.value * inputSix.value);
-    console.log(a);
+    //console.log(a);
     answerMain.innerHTML = a.toFixed(2);
     answerUnit.innerHTML = inputFourUnit.value;
     // return a;
@@ -106,14 +130,14 @@ function openSecondSesame(e) {
       (inputFive.value * inputThree.value);
     answerMain.innerHTML = b.toFixed(2);
     answerUnit.innerHTML = inputFourUnit.value;
-    console.log(b);
+    //console.log(b);
     // return b;
   }
   if (firstDirect.checked && secondDirect.checked) {
     var c =
       (inputOne.value * inputFive.value * inputSix.value) /
       (inputTwo.value * inputThree.value);
-    console.log(c);
+    //console.log(c);
     answerMain.innerHTML = c.toFixed(2);
     answerUnit.innerHTML = inputFourUnit.value;
     // return c;
@@ -122,7 +146,7 @@ function openSecondSesame(e) {
     var d =
       (inputOne.value * inputTwo.value * inputThree.value) /
       (inputFive.value * inputSix.value);
-    console.log(d);
+    //console.log(d);
     answerMain.innerHTML = d.toFixed(2);
     answerUnit.innerHTML = inputFourUnit.value;
     // return d;
@@ -142,5 +166,5 @@ function openSecondSesame(e) {
     // Results jquery fade in
     $("#solution-main").fadeIn(1000);
     $("#reload-code").fadeIn(1200);
-  }, 1500);
+  }, 800);
 }
